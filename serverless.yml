@@ -1,0 +1,37 @@
+service: app
+
+provider:
+    name: aws
+    region: us-east-1
+    runtime: provided.al2
+
+plugins:
+    - ./vendor/bref/bref
+
+functions:
+    api:
+        handler: public/index.php
+        description: ''
+        timeout: 28 # in seconds (API Gateway has a timeout of 29 seconds)
+        layers:
+            - ${bref:layer.php-74-fpm}
+        events:
+            -   httpApi: '*'
+
+# Exclude files from deployment
+package:
+    exclude:
+        - 'node_modules/**'
+        - 'tests/**'
+        - 'docker/**'
+        - 'deploy/**'
+        - 'database/tmp/**'
+        - '.env'
+        - 'storage/app/ocr_pdf_temp/**'
+        - 'storage/app/public/**'
+        - 'storage/framework/views/**'
+        - 'storage/framework/cache/**'
+        - 'storage/framework/testing/**'
+        - 'storage/tmp/**'
+        - '.git/**'
+        - '.idea/**'

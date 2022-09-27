@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  server:
+    image: nginx
+    volumes:
+      - ./:/var/www/html
+      - .docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - ${APP_PORT}:80
+    networks:
+      - backend
+
+  app:
+    build: .docker/php
+    image: php:7.4
+    volumes:
+      - ./:/var/www/html:rw
+      - .docker/php/policy.xml:/etc/ImageMagick-6/policy.xml:ro
+    environment:
+      XDEBUG_CONFIG: remote_host=host.docker.internal
+      COMPOSER_MEMORY_LIMIT: -1
+    networks:
+      - backend
+
+  mysql:
+    image: mysql:5.7
+    container_name: medb_mysql
+    ports:
+      - ${DB_EXTERNAL_PORT}:3306
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE}
+      MYSQL_USER: ${DB_USERNAME}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - .docker/mysql:/var/lib/mysql
+    networks:
+      - backend
+
+networks:
+  backend:
+    external: true

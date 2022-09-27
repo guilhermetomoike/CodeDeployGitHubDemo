@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html/
+hooks:
+  AfterInstall:
+    - location: .deploy/after_install.sh
+      timeout: 900
+      runas: root
+  AfterAllowTraffic:
+    - location: .deploy/after_allow_traffic.sh
+      timeout: 600
+      runas: root
+  BeforeBlockTraffic:
+    - location: .deploy/before_block_traffic.sh
+      timeout: 600
+      runas: root
