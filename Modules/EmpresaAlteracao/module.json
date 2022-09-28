@@ -1,0 +1,13 @@
+{
+    "name": "EmpresaAlteracao",
+    "alias": "empresaalteracao",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\EmpresaAlteracao\\Providers\\EmpresaAlteracaoServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

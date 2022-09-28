@@ -1,0 +1,15 @@
+{
+    "Irpf": true,
+    "Plans": true,
+    "Invoice": true,
+    "Apontamentos": true,
+    "Contratantes": true,
+    "EmpresaAlteracao": true,
+    "Onboarding": true,
+    "Evaluation": true,
+    "LivroFiscal": true,
+    "TaxSimulator": true,
+    "Activity": true,
+    "Linker": true,
+    "Questionario": true
+}

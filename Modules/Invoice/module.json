@@ -1,0 +1,17 @@
+{
+    "name": "Invoice",
+    "alias": "invoice",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Invoice\\Providers\\InvoiceServiceProvider",
+        "Modules\\Invoice\\Providers\\WebhookInvoiceProvider",
+        "Modules\\Invoice\\Providers\\PaymentGatewayServiceProvider",
+        "Modules\\Invoice\\Providers\\PaymentMethodServiceProvider",
+        "Modules\\Invoice\\Providers\\EventServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

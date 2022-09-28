@@ -1,0 +1,25 @@
+{
+    "name": "medb/activity",
+    "description": "",
+    "authors": [
+        {
+            "name": "Medb Developer",
+            "email": "devmedb@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Activity\\Providers\\ActivityServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Apontamentos\\": ""
+        }
+    }
+}

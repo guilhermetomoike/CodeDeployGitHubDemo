@@ -1,0 +1,25 @@
+{
+    "name": "medb/invoice",
+    "description": "",
+    "authors": [
+        {
+            "name": "Medb Developer",
+            "email": "devmedb@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Invoice\\Providers\\InvoiceServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Invoice\\": ""
+        }
+    }
+}

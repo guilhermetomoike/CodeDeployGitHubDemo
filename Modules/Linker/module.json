@@ -1,0 +1,13 @@
+{
+    "name": "Linker",
+    "alias": "linker",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Linker\\Providers\\LinkerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Questionario",
+    "alias": "questionario",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Questionario\\Providers\\QuestionarioServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,25 @@
+{
+    "name": "medb/contratantes",
+    "description": "",
+    "authors": [
+        {
+            "name": "Medb Developer",
+            "email": "devmedb@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Contratantes\\Providers\\ContratantesServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Contratantes\\": ""
+        }
+    }
+}

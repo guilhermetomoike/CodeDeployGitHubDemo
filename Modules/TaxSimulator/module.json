@@ -1,0 +1,13 @@
+{
+    "name": "TaxSimulator",
+    "alias": "taxsimulator",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\TaxSimulator\\Providers\\TaxSimulatorServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,13 @@
+{
+    "name": "Contratantes",
+    "alias": "contratantes",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Contratantes\\Providers\\ContratantesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Irpf",
+    "alias": "irpf",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\Irpf\\Providers\\IrpfServiceProvider",
+        "Modules\\Irpf\\Providers\\ChargeIrpfServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

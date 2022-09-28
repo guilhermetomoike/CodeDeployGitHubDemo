@@ -1,0 +1,26 @@
+{
+    "name": "medb/linker",
+    "description": "",
+    "authors": [
+        {
+            "name": "Medb Developer",
+            "email": "devmedb@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Linker\\Providers\\LinkerServiceProvider"
+
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Linker\\": ""
+        }
+    }
+}

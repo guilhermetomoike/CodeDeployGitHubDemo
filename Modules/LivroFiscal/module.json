@@ -1,0 +1,13 @@
+{
+    "name": "LivroFiscal",
+    "alias": "livrofiscal",
+    "description": "",
+    "keywords": [],
+    "order": 0,
+    "providers": [
+        "Modules\\LivroFiscal\\Providers\\LivroFiscalServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -1,0 +1,23 @@
+{
+    "name": "medb/taxsimulator",
+    "description": "",
+    "authors": [
+        {
+            "name": "Medb Developer",
+            "email": "devmedb@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\TaxSimulator\\": ""
+        }
+    }
+}
